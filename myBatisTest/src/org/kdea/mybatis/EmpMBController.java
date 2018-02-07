@@ -22,6 +22,7 @@ public class EmpMBController {
 	public String getEmpList(Model model) {
 		System.out.println("리스트로가기전에 테스트를 거친다.");
 		System.out.println("출근시간이다가오는 kdy");
+		System.out.println("집갈시간이온다");
 		EmpDAO dao = sqlSessionTemplate.getMapper(EmpDAO.class);
 		List<Emp> list = dao.list();
 		model.addAttribute("empList", list);
