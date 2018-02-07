@@ -20,6 +20,7 @@ public class EmpMBController {
 
 	@RequestMapping("/empList")
 	public String getEmpList(Model model) {
+		System.out.println("리스트로가기전에 테스트를 거친다.");
 		EmpDAO dao = sqlSessionTemplate.getMapper(EmpDAO.class);
 		List<Emp> list = dao.list();
 		model.addAttribute("empList", list);
