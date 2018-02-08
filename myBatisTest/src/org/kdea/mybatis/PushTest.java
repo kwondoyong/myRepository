@@ -5,5 +5,6 @@ public class PushTest {
 		System.out.println("10시 41분");
 		System.out.println("10시 48분");
 		System.out.println("11시 02분");
+		System.out.println("11시 09분");
 	}
 }
