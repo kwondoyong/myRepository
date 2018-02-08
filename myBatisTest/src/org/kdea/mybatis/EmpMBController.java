@@ -21,13 +21,14 @@ public class EmpMBController {
 	@RequestMapping("/empList")
 	public String getEmpList(Model model) {	
 		
+		System.out.println("한번더 합병해보렉용");
 		System.out.println("최종합병테스트입니다.");
 		EmpDAO dao = sqlSessionTemplate.getMapper(EmpDAO.class);
 		List<Emp> list = dao.list();
 		model.addAttribute("empList", list);
-		System.out.println("최종합병테스트입니다.");
-		System.out.println("최종합병테스트입니다.");
-		System.out.println("최종합병테스트입니다.");
+		System.out.println("한번더 합병해보렉용");
+		System.out.println("한번더 합병해보렉용");
+		System.out.println("한번더 합병해보렉용");		
 		return "mb/empList";
 	}
 
