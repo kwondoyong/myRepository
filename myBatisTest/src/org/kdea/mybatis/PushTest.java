@@ -12,7 +12,8 @@ public class PushTest {
 		
 		System.out.println(emp.getDeptno());
 		
-		
+		emp.setEmpno(1);
+		System.out.println(emp.getEmpno());
 		
 		System.out.println("11시 02분");
 		System.out.println("11시 09분");

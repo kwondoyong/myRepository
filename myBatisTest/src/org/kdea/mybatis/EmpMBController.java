@@ -21,8 +21,7 @@ public class EmpMBController {
 	@RequestMapping("/empList")
 	public String getEmpList(Model model) {
 
-		System.out.println(" 10:37분");
-		System.out.println("10:36분");
+		System.out.println("11시22분");
 		
 		EmpDAO dao = sqlSessionTemplate.getMapper(EmpDAO.class);
 		List<Emp> list = dao.list();
