@@ -19,13 +19,17 @@ public class EmpMBController {
 													// Setter 없이 자동으로 주입
 
 	@RequestMapping("/empList")
-	public String getEmpList(Model model) {
-
-		System.out.println("11시22분");
-		
+	public String getEmpList(Model model) {		
 		EmpDAO dao = sqlSessionTemplate.getMapper(EmpDAO.class);
 		List<Emp> list = dao.list();
 		model.addAttribute("empList", list);
+		
+		System.out.println("마지막 마스터 합병테스트입니다.");
+		System.out.println("마지막 마스터 합병테스트입니다.");
+		System.out.println("마지막 마스터 합병테스트입니다.");
+		System.out.println("마지막 마스터 합병테스트입니다.");
+		System.out.println("마지막 마스터 합병테스트입니다.");
+		
 		return "mb/empList";
 	}
 
